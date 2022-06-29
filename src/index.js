@@ -1,4 +1,3 @@
-//
 const cardList = document.getElementsByClassName('cards')[0]
 
 for (let i = 0; i < data.length; i++) {
@@ -43,6 +42,7 @@ for (let i = 0; i < data.length; i++) {
         card.setAttribute('class', 'card')
 
         cardTitle.setAttribute('class', 'card--title')
+        cardTitle.textContent = `${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}`
         
         cardImage.setAttribute('width', '256px')
         cardImage.setAttribute('id', `img${pokemon.id}`)
